@@ -1,0 +1,6 @@
+@APBD8_pracadomowaa_HostAddress = http://localhost:5247
+
+GET {{APBD8_pracadomowaa_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
