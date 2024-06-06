@@ -27,7 +27,7 @@ public class TripServices : ITripServices
             throw new Exception($"Client with Pesel: {clientToTripDto.Pesel} exists");
         }
 
-        if (await _tripRepository.DoesTripOnThisPeselExists(context, idTrip))
+        if (await _tripRepository.DoesTripOnThisPeselExists(context, idTrip, clientToTripDto))
         {
             throw new Exception($"Client with Pesel: {clientToTripDto.Pesel} has been sighn to trip with id{idTrip}");
         }

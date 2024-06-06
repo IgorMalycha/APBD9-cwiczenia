@@ -56,18 +56,21 @@ public class TripRepository : ITripRepository
         return false;
     }
 
-    public async Task<bool> DoesTripOnThisPeselExists(Apbd8Context context, int idTrip)
+    public async Task<bool> DoesTripOnThisPeselExists(Apbd8Context context, int idTrip, ClientToTripDTO clientToTripDto)
     {
+        //return await _context.ClientTrips.AnyAsync(ct => ct.Client.Pesel == clientToTripDTO.Pesel && ct.IdTrip == idTrip);
         return false;
     }
 
     public async Task<bool> DoesTripExist(Apbd8Context context, int idTrip)
     {
+        
         return false;
     }
 
     public async Task<bool> IsDateFromInPast(Apbd8Context context, ClientToTripDTO clientToTripDto)
     {
+        
         return false;
     }
 
