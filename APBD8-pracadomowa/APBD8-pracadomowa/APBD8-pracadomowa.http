@@ -1,6 +1,0 @@
-@APBD8_pracadomowa_HostAddress = http://localhost:5055
-
-GET {{APBD8_pracadomowa_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
